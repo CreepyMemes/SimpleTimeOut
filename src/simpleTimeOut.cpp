@@ -7,6 +7,6 @@ void SimpleTimeOut::start() {
     _start_time = millis();
 }
 
-bool SimpleTimeOut::isTimeout() {
+bool SimpleTimeOut::isExpired() {
     return (millis() - _start_time >= _timeout_duration);
 }

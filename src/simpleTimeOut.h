@@ -8,7 +8,7 @@ class SimpleTimeOut {
         SimpleTimeOut(uint64_t duration_ms);
 
         void start();
-        bool isTimeout();
+        bool isExpired();
 
     private:
         uint64_t _timeout_duration;
